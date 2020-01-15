@@ -2,7 +2,6 @@ package com.cfl.oneself.utils.soft;
 
 import com.cfl.oneself.utils.entity.UserEntity;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,6 +30,13 @@ public class softUtil {
         soft.stream().forEach(user -> {
             System.out.println(user.toString());
         });
+
+        BiJiaoQi biJiaoQi = new BiJiaoQi() {
+            @Override
+            public boolean bijiao(UserEntity u1, UserEntity u2) {
+                return false;
+            }
+        };
 
     }
 

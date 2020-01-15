@@ -1,6 +1,5 @@
-package com.cfl.oneself.utils.softAll;
+package com.cfl.oneself.utils.softall;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

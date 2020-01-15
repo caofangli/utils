@@ -1,4 +1,4 @@
-package com.cfl.oneself.utils.softAll;
+package com.cfl.oneself.utils.softall;
 
 /**
  * @ClassName： BiJiaoQi
