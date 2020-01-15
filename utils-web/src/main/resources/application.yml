@@ -14,5 +14,5 @@ spring:
 #mybatis配置
 mybatis:
   typeAliasesPackage: com.cfl.oneself.utils.entity
-  mapperLocations: classpath:mapper/*.xml
+  mapperLocations: classpath:mapper/*.xml,classpath:mappers/*/*.xml
   #configLocation: classpath:/mybatis-config.xml
