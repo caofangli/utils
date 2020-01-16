@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication(scanBasePackages = "com.cfl.oneself.utils")
 @ComponentScan(basePackages = {"com.cfl.oneself.utils.service","com.cfl.oneself.utils.controller"})
-@MapperScan("com.cfl.oneself.utils.dao")
+@MapperScan({"com.cfl.oneself.utils.dao","com.cfl.oneself.utils.dao.*"})
 public class UtilsApplication {
 
     public static void main(String[] args) {

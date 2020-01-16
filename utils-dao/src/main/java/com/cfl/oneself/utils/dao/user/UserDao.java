@@ -1,6 +1,6 @@
 package com.cfl.oneself.utils.dao.user;
 
-import com.cfl.oneself.utils.entity.BaseEntity;
+import com.cfl.oneself.utils.entity.user.UserEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -13,6 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserDao {
 
-    BaseEntity login(BaseEntity user);
+    UserEntity login(UserEntity user);
 
 }

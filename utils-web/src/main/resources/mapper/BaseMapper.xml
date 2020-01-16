@@ -9,7 +9,7 @@
         <result column="age" property="age"/>
     </resultMap>
 
-    <select id="login" parameterType="com.cfl.oneself.utils.entity.BaseEntity" resultMap="Map">
+    <select id="login1" parameterType="com.cfl.oneself.utils.entity.BaseEntity" resultMap="Map">
 
     select * from t_user where user_name = #{userName}
 

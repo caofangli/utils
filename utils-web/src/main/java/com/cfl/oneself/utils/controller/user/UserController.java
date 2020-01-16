@@ -1,7 +1,7 @@
 package com.cfl.oneself.utils.controller.user;
 
-import com.cfl.oneself.utils.entity.BaseEntity;
-import com.cfl.oneself.utils.service.BaseService;
+import com.cfl.oneself.utils.entity.user.UserEntity;
+import com.cfl.oneself.utils.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,10 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @Autowired
-    private BaseService service;
+    private UserService service;
 
     @PostMapping("/login")
-    public BaseEntity login(@RequestBody BaseEntity user) {
+    public UserEntity login(@RequestBody UserEntity user) {
         System.out.println("1111");
         return service.login(user);
     }

@@ -1,7 +1,6 @@
 package com.cfl.oneself.utils.service.user;
 
-
-import com.cfl.oneself.utils.entity.BaseEntity;
+import com.cfl.oneself.utils.entity.user.UserEntity;
 
 /**
  * @ClassName： UserService
@@ -12,6 +11,6 @@ import com.cfl.oneself.utils.entity.BaseEntity;
  */
 public interface UserService {
 
-    BaseEntity login(BaseEntity user);
+    UserEntity login(UserEntity user);
 
 }

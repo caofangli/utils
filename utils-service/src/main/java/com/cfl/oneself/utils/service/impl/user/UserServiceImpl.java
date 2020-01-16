@@ -1,8 +1,8 @@
 package com.cfl.oneself.utils.service.impl.user;
 
-import com.cfl.oneself.utils.dao.BaseDao;
-import com.cfl.oneself.utils.entity.BaseEntity;
-import com.cfl.oneself.utils.service.BaseService;
+import com.cfl.oneself.utils.dao.user.UserDao;
+import com.cfl.oneself.utils.entity.user.UserEntity;
+import com.cfl.oneself.utils.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,13 +14,13 @@ import org.springframework.stereotype.Service;
  * @Vesion 1.0
  */
 @Service
-public class UserServiceImpl implements BaseService {
+public class UserServiceImpl implements UserService {
 
     @Autowired
-    private BaseDao dao;
+    private UserDao dao;
 
     @Override
-    public BaseEntity login(BaseEntity user) {
+    public UserEntity login(UserEntity user) {
         return dao.login(user);
     }
 }
